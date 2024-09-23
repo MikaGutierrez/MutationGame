@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,9 +12,10 @@ public class CharacterMovement : MonoBehaviour
     private float moveInput;
 
     //For Jump
+    public float WeightMM = 1f;
     public bool SecondJump;
     public bool isJumping;
-    public float jumpForce;
+    public float jumpForce = 8;
     public float jumpTimeCounter;
     public float jumpTime;
 
@@ -39,16 +41,20 @@ public class CharacterMovement : MonoBehaviour
 
 
     //PartsOfTheBody
+    public float jumpForceWings;
     public int WingNumber = 0;
     private int WingNumberOld = 0;
     public float WingTimer = 0;
     public GameObject[] Wings; //None, Bat, Insect, Bird
 
+    public float jumpForceTail;
     public int TailNumber = 0;
     private int TailNumberOld = 0;
     public float TailTimer = 0;
     public GameObject[] Tails; //None, Big, Ball, Rat
 
+    public float jumpForceLeg;
+    public float SpeedLeg = 1;
     public int LegNumber = 0;
     private int LegNumberOld = 0;
     public float LegTimer = 0;
@@ -58,6 +64,10 @@ public class CharacterMovement : MonoBehaviour
     private int SpetialAbilitiesNumberOld = 0;
     public float SpetialAbilitiesTimer = 0;
     public GameObject[] SpetialAbilities; //None, Dark
+
+
+    private bool TaketDamage;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -76,6 +86,18 @@ public class CharacterMovement : MonoBehaviour
         if (collision.tag == "SpetialAbilitiesDNA")
         {
             StartCoroutine(ActivateSpetialAbilities());
+        }
+        if (collision.tag == "DamageCollider" && TaketDamage == false)
+        {
+            rb.velocity = Vector2.up * 10f;
+            TakeDamage();
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "DamageCollider")
+        {
+            TaketDamage = false;
         }
     }
     // Start is called before the first frame update
@@ -97,7 +119,7 @@ public class CharacterMovement : MonoBehaviour
         moveInput = Input.GetAxis("Horizontal");
         if (WorkWalk == true)
         {
-            rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+            rb.velocity = new Vector2(moveInput * speed * SpeedLeg, rb.velocity.y);
         }
         //if (moveInput > 0)
         //{
@@ -176,8 +198,55 @@ public class CharacterMovement : MonoBehaviour
         {
             HPTimer -= Time.deltaTime * 0.05f;
         }
-        //--------------------------------
+        //--------------------------------Вес
 
+        if (WingNumber == 1 || WingNumber == 3)
+        {
+            jumpForceWings = 3 * 2 * WeightMM;
+        }
+        else if (WingNumber == 2)
+        {
+            jumpForceWings = 2 * 2 * WeightMM;
+        }
+        else
+        {
+            jumpForceWings = 0;
+        }
+        if (LegNumber == 2)//4 leg
+        {
+            SpeedLeg = 0.7f;
+            jumpForceLeg = 4 * 2 * WeightMM * 0.9f;
+        }
+        else if (LegNumber == 1)//3 leg
+        {
+            jumpForceLeg = 4 * 2 * WeightMM;
+        }
+        else if (LegNumber == 3)//2 leg
+        {
+            SpeedLeg = 3;
+            jumpForceLeg = 2 * 2 * WeightMM * 0.7f;
+        }
+        else
+        {
+            SpeedLeg = 1;
+            jumpForceLeg = 0;
+        }
+        if (TailNumber == 1 || TailNumber == 2)// Big Tail & Ball Tail
+        {
+            jumpForceTail = 3 * WeightMM * 0.7f;
+        }
+        else if (TailNumber == 3)//Rat 
+        {
+            jumpForceTail = 4 * WeightMM;
+        }
+        else
+        {
+            jumpForceTail = 0;
+        }
+
+
+
+        //--------------------------------
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
         if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
@@ -210,12 +279,12 @@ public class CharacterMovement : MonoBehaviour
             //Char_Animator.SetTrigger("Jump");
             if (jumpTimeCounter > 0 && isJumping == true)
             {
-                rb.velocity = Vector2.up * jumpForce;
+                rb.velocity = Vector2.up * (jumpForce + jumpForceLeg + jumpForceTail + jumpForceWings);
                 jumpTimeCounter -= Time.deltaTime;
             }
             if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 3 && isJumping == false)
             {
-                rb.velocity = Vector2.up * jumpForce;
+                rb.velocity = Vector2.up * (jumpForce + jumpForceLeg + jumpForceTail + jumpForceWings);
                 jumpTimeCounter -= Time.deltaTime;
             }
             if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 2 && isJumping == false)
@@ -320,5 +389,36 @@ public class CharacterMovement : MonoBehaviour
         if (SpetialAbilitiesNumber == SpetialAbilitiesNumberOld) { StartCoroutine(ActivateSpetialAbilities()); }
         else { foreach (GameObject objet in SpetialAbilities) { objet.SetActive(false); } }
         SpetialAbilities[SpetialAbilitiesNumber].SetActive(true);
+    }
+
+    public void TakeDamage()
+    {
+        TaketDamage = true;
+        if (WingNumber > 0)
+        {
+            WingNumber = 0;
+            foreach (GameObject objet in Wings) { objet.SetActive(false); }
+        }
+        else if (SpetialAbilitiesNumber > 0)
+        {
+            SpetialAbilitiesNumber = 0;
+            foreach (GameObject objet in SpetialAbilities) { objet.SetActive(false); }
+        }
+        else if (TailNumber > 0)
+        {
+            TailNumber = 0;
+            foreach (GameObject objet in Tails) { objet.SetActive(false); }
+        }
+        else if (LegNumber > 0)
+        {
+            LegNumber = 0;
+            foreach (GameObject objet in Legs) { objet.SetActive(false); }
+        }
+        else
+        {
+            HPTimer -= 0.15f;
+        }
+
+
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - LegsDNA
   - TailDNA
   - SpetialAbilitiesDNA
+  - DamageCollider
   layers:
   - Default
   - TransparentFX
