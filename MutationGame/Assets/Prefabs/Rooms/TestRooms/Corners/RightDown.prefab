@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3626555233149531105}
   - component: {fileID: 3732702226042800925}
   - component: {fileID: 5275921464023932258}
+  - component: {fileID: 7913238026805445527}
   m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
@@ -316,6 +317,42 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!19719996 &7913238026805445527
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2317023026770147142}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &2345060303821285637
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +621,7 @@ Transform:
   m_GameObject: {fileID: 6236302393211261281}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: -1.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -674,7 +711,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.050430447, y: 0.9762426}
+  m_Offset: {x: -0.10020882, y: 1.1042442}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -685,7 +722,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9786617, y: 0.9109677}
+  m_Size: {x: 1.0782183, y: 1.0816364}
   m_EdgeRadius: 0
 --- !u!114 &313357221756902391
 MonoBehaviour:
@@ -700,9 +737,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NextRooms:
-  - {fileID: 3973427378017883682}
-  - {fileID: 3973427378017883682, guid: 95aa5cf2e24740548adcab73435cf36a, type: 3}
-  - {fileID: 3973427378017883682, guid: f462a1bd41c12a54681dfe374b427a13, type: 3}
+  - {fileID: 3973427378017883682, guid: 92edbee5a58816146a2917f3e0d9627a, type: 3}
+  - {fileID: 6143259118503701926, guid: 99a19b333f84145478b828a557c319b1, type: 3}
+  - {fileID: 3973427378017883682, guid: c1e2d1d3c9487e24a875f008d6ca8ad1, type: 3}
+  - {fileID: 6143259118503701926, guid: 4b052b3d8939ac148a4e223e4ceb2ce9, type: 3}
 --- !u!1001 &8799868352684152334
 PrefabInstance:
   m_ObjectHideFlags: 0
