@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ public class CharacterMovement : MonoBehaviour
     private bool WorkWalk = true;
     public float speed;
     private float moveInput;
+    public bool IsDead = false;
 
     //For Jump
     public float WeightMM = 1f;
@@ -27,6 +29,8 @@ public class CharacterMovement : MonoBehaviour
 
     //Rigidbody2D
     private Rigidbody2D rb;
+    public SpriteRenderer sp;
+    private float RigidbodyOriginalGravityScale;
     //Health
     public Image RedGene;
     public Image PurpleGene;
@@ -37,7 +41,7 @@ public class CharacterMovement : MonoBehaviour
 
 
 
-
+    public Animator AnimatorForG3;
 
 
     //PartsOfTheBody
@@ -71,6 +75,10 @@ public class CharacterMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "GravityCollition")
+        {
+            rb.gravityScale = -0.1f;
+        }
         if (collision.tag == "WingDNA")
         {
             StartCoroutine(ActivateWings());
@@ -99,6 +107,10 @@ public class CharacterMovement : MonoBehaviour
         {
             TaketDamage = false;
         }
+        if (collision.tag == "GravityCollition")
+        {
+            rb.gravityScale = RigidbodyOriginalGravityScale;
+        }
     }
     // Start is called before the first frame update
     void Start()
@@ -113,13 +125,17 @@ public class CharacterMovement : MonoBehaviour
         }
 
         rb = GetComponent<Rigidbody2D>();
+        RigidbodyOriginalGravityScale = rb.gravityScale;
     }
     void FixedUpdate()
     {
-        moveInput = Input.GetAxis("Horizontal");
-        if (WorkWalk == true)
+        if (IsDead == false)
         {
-            rb.velocity = new Vector2(moveInput * speed * SpeedLeg, rb.velocity.y);
+            moveInput = Input.GetAxis("Horizontal");
+            if (WorkWalk == true)
+            {
+                rb.velocity = new Vector2(moveInput * speed * SpeedLeg, rb.velocity.y);
+            }
         }
         //if (moveInput > 0)
         //{
@@ -134,6 +150,10 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (HPTimer <= 0)
+        {
+            StartCoroutine(Die());
+        }
         GreneHealth.fillAmount = HPTimer;
 
         if (WingNumber > 0){BlueGene.enabled = true;}
@@ -248,85 +268,87 @@ public class CharacterMovement : MonoBehaviour
 
         //--------------------------------
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-
-        if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
+        if (IsDead == false)
         {
-            isJumping = true;
-            SecondJump = true;
-            jumpTimeCounter = jumpTime;
-            rb.velocity = Vector2.up * jumpForce;
-        }
-        if (isJumping == false && SecondJump == true && Input.GetKeyDown(KeyCode.Space))
-        {
-            if (WingNumber == 3)
+            if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
             {
+                isJumping = true;
+                SecondJump = true;
                 jumpTimeCounter = jumpTime;
                 rb.velocity = Vector2.up * jumpForce;
             }
-            if (WingNumber == 2)
+            if (isJumping == false && SecondJump == true && Input.GetKeyDown(KeyCode.Space))
             {
-                jumpTimeCounter = jumpTime * 2f;
-                rb.velocity = Vector2.up * -0.3f;
+                if (WingNumber == 3)
+                {
+                    jumpTimeCounter = jumpTime;
+                    rb.velocity = Vector2.up * jumpForce;
+                }
+                if (WingNumber == 2)
+                {
+                    jumpTimeCounter = jumpTime * 2f;
+                    rb.velocity = Vector2.up * -0.3f;
+                }
+                if (WingNumber == 1)
+                {
+                    WorkWalk = false;
+                    jumpTimeCounter = 0.17f;
+                }
             }
-            if (WingNumber == 1)
+            if (Input.GetKey(KeyCode.Space))
             {
-                WorkWalk = false;
-                jumpTimeCounter = 0.17f;
+                //Char_Animator.SetTrigger("Jump");
+                if (jumpTimeCounter > 0 && isJumping == true)
+                {
+                    rb.velocity = Vector2.up * (jumpForce + jumpForceLeg + jumpForceTail + jumpForceWings);
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+                if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 3 && isJumping == false)
+                {
+                    rb.velocity = Vector2.up * (jumpForce + jumpForceLeg + jumpForceTail + jumpForceWings);
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+                if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 2 && isJumping == false)
+                {
+                    rb.velocity = Vector2.up * -0.3f;
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+                if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 1 && isJumping == false)
+                {
+                    rb.velocity = Vector2.left * 10f;
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+
             }
-        }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            //Char_Animator.SetTrigger("Jump");
-            if (jumpTimeCounter > 0 && isJumping == true)
+            if (Input.GetKeyUp(KeyCode.Space))
             {
-                rb.velocity = Vector2.up * (jumpForce + jumpForceLeg + jumpForceTail + jumpForceWings);
-                jumpTimeCounter -= Time.deltaTime;
-            }
-            if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 3 && isJumping == false)
-            {
-                rb.velocity = Vector2.up * (jumpForce + jumpForceLeg + jumpForceTail + jumpForceWings);
-                jumpTimeCounter -= Time.deltaTime;
-            }
-            if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 2 && isJumping == false)
-            {
-                rb.velocity = Vector2.up * -0.3f;
-                jumpTimeCounter -= Time.deltaTime;
-            }
-            if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 1 && isJumping == false)
-            {
-                rb.velocity = Vector2.left * 10f;
-                jumpTimeCounter -= Time.deltaTime;
+                if (isJumping == true && SecondJump == true)
+                {
+                    isJumping = false;
+                }
+                else if (isJumping == false && SecondJump == true)
+                {
+                    SecondJump = false;
+                }
             }
 
-        }
-        if (Input.GetKeyUp(KeyCode.Space) )
-        {
-            if (isJumping == true && SecondJump == true)
+            if (WorkWalk == false && WingNumber == 1 && jumpTimeCounter > 0)
             {
-                isJumping = false;
+                if (moveInput < 0)
+                {
+                    rb.velocity = Vector2.left * 50f;
+                    jumpTimeCounter -= Time.deltaTime;
+                }
+                if (moveInput > 0)
+                {
+                    rb.velocity = Vector2.right * 50f;
+                    jumpTimeCounter -= Time.deltaTime;
+                }
             }
-            else if (isJumping == false && SecondJump == true)
+            else if (WorkWalk == false && jumpTimeCounter <= 0)
             {
-                SecondJump = false;
+                WorkWalk = true;
             }
-        }
-
-        if (WorkWalk == false && WingNumber == 1 && jumpTimeCounter > 0)
-        {
-            if (moveInput < 0)
-            { 
-                rb.velocity = Vector2.left * 50f;
-                jumpTimeCounter -= Time.deltaTime;
-            }
-            if (moveInput > 0)
-            {
-                rb.velocity = Vector2.right * 50f;
-                jumpTimeCounter -= Time.deltaTime;
-            }
-        }
-        else if (WorkWalk == false && jumpTimeCounter <= 0)
-        {
-            WorkWalk = true;
         }
 
 
@@ -419,6 +441,13 @@ public class CharacterMovement : MonoBehaviour
             HPTimer -= 0.15f;
         }
 
-
+    }
+    private IEnumerator Die()
+    {
+        IsDead = true;
+        AnimatorForG3.Play("G3Dies");
+        rb.gravityScale = -0.2f;
+        yield return new WaitForSeconds(1f);
+        sp.enabled = false;
     }
 }

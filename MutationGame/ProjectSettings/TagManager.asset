@@ -9,6 +9,7 @@ TagManager:
   - TailDNA
   - SpetialAbilitiesDNA
   - DamageCollider
+  - GravityCollition
   layers:
   - Default
   - TransparentFX
