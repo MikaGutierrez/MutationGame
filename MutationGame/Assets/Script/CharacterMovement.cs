@@ -72,7 +72,6 @@ public class CharacterMovement : MonoBehaviour
 
     private bool TaketDamage;
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "GravityCollition")
@@ -415,6 +414,7 @@ public class CharacterMovement : MonoBehaviour
 
     public void TakeDamage()
     {
+        AnimatorForG3.Play("G3DamageTaken");
         TaketDamage = true;
         if (WingNumber > 0)
         {

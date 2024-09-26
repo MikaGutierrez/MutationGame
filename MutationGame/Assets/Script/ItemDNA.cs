@@ -5,22 +5,21 @@ using UnityEngine;
 public class ItemDNA : MonoBehaviour
 {
     public GameObject Self;
+    private Animator anim;
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            Destroy(Self);
+            anim.Play("BubblePop");           
         }
-    }
-    // Start is called before the first frame update
-    void Start()
+    }    
+    void DestroyItself()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Destroy(Self);
     }
 }

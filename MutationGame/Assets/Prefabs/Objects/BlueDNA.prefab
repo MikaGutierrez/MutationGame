@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 715291658348377658}
   - component: {fileID: 1713939908207782297}
   - component: {fileID: 7815394283572125173}
+  - component: {fileID: 8416155229799977087}
   m_Layer: 0
   m_Name: BlueDNA
   m_TagString: WingDNA
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8858868964049666965}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.49, y: -6.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -134,3 +135,24 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0036051273, y: 0}
   m_Size: {x: 1.1103139, y: 1.1103139}
   m_Direction: 0
+--- !u!95 &8416155229799977087
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8858868964049666965}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba0edf9c61be10c4e982923d8a979889, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
