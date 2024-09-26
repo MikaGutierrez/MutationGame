@@ -29,6 +29,7 @@ public class CharacterMovement : MonoBehaviour
 
     //Rigidbody2D
     private Rigidbody2D rb;
+    public CapsuleCollider2D cl;
     public SpriteRenderer sp;
     private float RigidbodyOriginalGravityScale;
     //Health
@@ -69,7 +70,9 @@ public class CharacterMovement : MonoBehaviour
     public float SpetialAbilitiesTimer = 0;
     public GameObject[] SpetialAbilities; //None, Dark
 
-
+    //Dead
+    public GameObject DeadPanel;
+    public GameObject TailRenderer;
     private bool TaketDamage;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -114,6 +117,7 @@ public class CharacterMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DeadPanel.SetActive(false);
         RedGene.enabled =false;
         PurpleGene.enabled = false;
         YellowGene.enabled = false;
@@ -125,6 +129,7 @@ public class CharacterMovement : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         RigidbodyOriginalGravityScale = rb.gravityScale;
+        StartCoroutine(Appear());
     }
     void FixedUpdate()
     {
@@ -445,9 +450,36 @@ public class CharacterMovement : MonoBehaviour
     private IEnumerator Die()
     {
         IsDead = true;
+        TailRenderer.SetActive(false);
         AnimatorForG3.Play("G3Dies");
-        rb.gravityScale = -0.2f;
+        rb.freezeRotation = true;
+        rb.velocity = Vector2.up * Vector2.right * 0;
+        WingNumber = 0;
+        SpetialAbilitiesNumber = 0;
+        TailNumber = 0;
+        LegNumber = 0;
+        foreach (GameObject objet in Wings) { objet.SetActive(false); }
+        foreach (GameObject objet in SpetialAbilities) { objet.SetActive(false); }
+        foreach (GameObject objet in Tails) { objet.SetActive(false); }
+        foreach (GameObject objet in Legs) { objet.SetActive(false); }
         yield return new WaitForSeconds(1f);
         sp.enabled = false;
+        DeadPanel.SetActive(true);
+    }
+    private IEnumerator Appear()
+    {
+        rb.gravityScale = 0f;
+        cl.enabled = false;
+        IsDead = true;
+        rb.freezeRotation = true;
+        AnimatorForG3.Play("G3Appear");
+        rb.velocity = Vector2.up * Vector2.right * 0;
+        yield return new WaitForSeconds(1.2f);
+        AnimatorForG3.Play("G3Idle");
+        cl.enabled = true;
+        rb.freezeRotation = false;
+        IsDead = false;
+        rb.gravityScale = RigidbodyOriginalGravityScale;
+
     }
 }
