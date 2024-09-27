@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6876630039280450319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RespawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -4674792587916358550, guid: 70570acb4b73f02458dd9539eed87273, type: 3}
+  m_Sprite: {fileID: 809234956, guid: ceb1320aa5c718444b83c6861f8e6cd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7022588083875412791}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatformBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 8059726688325061498}
   - component: {fileID: 1516695207258741861}
   - component: {fileID: 8465954063491865491}
+  - component: {fileID: 1604965192255253686}
   m_Layer: 6
   m_Name: PlatformBubbleInside
   m_TagString: Untagged
@@ -215,10 +216,10 @@ CapsuleCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0005875322, y: 0.42353672}
-  m_Size: {x: 1.8914208, y: 0.5963641}
+  m_Offset: {x: 0.019471936, y: 0.42353672}
+  m_Size: {x: 2.181189, y: 0.5963641}
   m_Direction: 1
 --- !u!114 &4713603934495170884
 MonoBehaviour:
@@ -294,8 +295,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003921232, y: 0.677485}
-  m_Size: {x: 1.7157922, y: 0.1587974}
+  m_Offset: {x: 0.032896813, y: 0.677485}
+  m_Size: {x: 2.0233934, y: 0.1587974}
   m_Direction: 1
 --- !u!95 &8465954063491865491
 Animator:
@@ -318,3 +319,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!251 &1604965192255253686
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8808363038803211961}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
