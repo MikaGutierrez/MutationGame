@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2211886158450999349}
   - component: {fileID: 2655131871006715129}
   m_Layer: 6
-  m_Name: BigSpikes
+  m_Name: SpikesBig
   m_TagString: DamageCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 57535116, guid: 2d7be858a1352fe4cad9ee85beab7d7f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.41960785, g: 0.56078434, b: 0.62352943, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

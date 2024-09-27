@@ -4,6 +4,8 @@ using System.Diagnostics.Tracing;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -68,7 +70,8 @@ public class CharacterMovement : MonoBehaviour
     public int SpetialAbilitiesNumber = 0;
     private int SpetialAbilitiesNumberOld = 0;
     public float SpetialAbilitiesTimer = 0;
-    public GameObject[] SpetialAbilities; //None, Dark
+    public VolumeProfile[] SpetialAbilities; //Normal, RGB, Vingete,Black & White, Oven
+    public Volume VolumeG3;
 
     //Dead
     public GameObject DeadPanel;
@@ -209,12 +212,12 @@ public class CharacterMovement : MonoBehaviour
 
         if (SpetialAbilitiesTimer >= 0)
         {
-            SpetialAbilitiesTimer -= Time.deltaTime * 0.1f;
+            SpetialAbilitiesTimer -= Time.deltaTime * 0.05f;
         }
         else
         {
             SpetialAbilitiesNumber = 0;
-            foreach (GameObject objet in SpetialAbilities) { objet.SetActive(false); }
+            VolumeG3.profile = SpetialAbilities[SpetialAbilitiesNumber];
         }
 
 
@@ -409,12 +412,11 @@ public class CharacterMovement : MonoBehaviour
         SpetialAbilitiesNumberOld = SpetialAbilitiesNumber;
         yield return new WaitForSeconds(0.0001f);
         PurpleGene.enabled = true;
-        SpetialAbilitiesNumber = Random.Range(1, 2);
+        SpetialAbilitiesNumber = Random.Range(1, SpetialAbilities.Length);
         yield return new WaitForSeconds(0.0001f);
 
         if (SpetialAbilitiesNumber == SpetialAbilitiesNumberOld) { StartCoroutine(ActivateSpetialAbilities()); }
-        else { foreach (GameObject objet in SpetialAbilities) { objet.SetActive(false); } }
-        SpetialAbilities[SpetialAbilitiesNumber].SetActive(true);
+        else { VolumeG3.profile = SpetialAbilities[SpetialAbilitiesNumber]; }
     }
 
     public void TakeDamage()
@@ -429,7 +431,7 @@ public class CharacterMovement : MonoBehaviour
         else if (SpetialAbilitiesNumber > 0)
         {
             SpetialAbilitiesNumber = 0;
-            foreach (GameObject objet in SpetialAbilities) { objet.SetActive(false); }
+            VolumeG3.profile = SpetialAbilities[SpetialAbilitiesNumber];
         }
         else if (TailNumber > 0)
         {
@@ -459,7 +461,7 @@ public class CharacterMovement : MonoBehaviour
         TailNumber = 0;
         LegNumber = 0;
         foreach (GameObject objet in Wings) { objet.SetActive(false); }
-        foreach (GameObject objet in SpetialAbilities) { objet.SetActive(false); }
+        VolumeG3.profile = SpetialAbilities[SpetialAbilitiesNumber];
         foreach (GameObject objet in Tails) { objet.SetActive(false); }
         foreach (GameObject objet in Legs) { objet.SetActive(false); }
         yield return new WaitForSeconds(1f);
