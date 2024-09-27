@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\mutationgame\\mutationgame\\assets\\script\\bubbleplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\bubbleplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\assets\\script\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\mutationgame\\mutationgame\\assets\\script\\itemdna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\assets\\script\\itemdna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\itemdna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\mutationgame\\mutationgame\\assets\\script\\bubbleplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\bubbleplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\assets\\script\\charactermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +27,12 @@
       "RelativeMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\stopgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|c:\\users\\miguel\\documents\\github\\mutationgame\\mutationgame\\assets\\script\\roomspawning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\assets\\script\\roomspawning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\roomspawning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\assets\\script\\sowngravityfloor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\sowngravityfloor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\assets\\script\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212061F7-E1C7-AA55-374D-57B3924217CD}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BubblePlatform.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\BubblePlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\BubblePlatform.cs",
               "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\BubblePlatform.cs",
               "RelativeToolTip": "Assets\\Script\\BubblePlatform.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBIAAAAoAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwD0AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T09:28:56.594Z",
               "EditorCaption": ""
@@ -65,14 +65,14 @@
               "RelativeDocumentMoniker": "Assets\\Script\\ItemDNA.cs",
               "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\ItemDNA.cs",
               "RelativeToolTip": "Assets\\Script\\ItemDNA.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-27T10:17:41.268Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "RoomSpawning.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\RoomSpawning.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\RoomSpawning.cs",
@@ -80,12 +80,11 @@
               "RelativeToolTip": "Assets\\Script\\RoomSpawning.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T09:11:03.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-27T09:11:03.887Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "StopGame.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\StopGame.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\StopGame.cs",
@@ -93,25 +92,24 @@
               "RelativeToolTip": "Assets\\Script\\StopGame.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAYwB0AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T22:40:40.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T22:40:40.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\MainMenu.cs",
               "ToolTip": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\MainMenu.cs",
               "RelativeToolTip": "Assets\\Script\\MainMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBsAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T22:20:38.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "SownGravityFloor.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\SownGravityFloor.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\SownGravityFloor.cs",
@@ -119,12 +117,11 @@
               "RelativeToolTip": "Assets\\Script\\SownGravityFloor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T21:34:57.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T21:34:57.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DestroyRoom.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\DestroyRoom.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\DestroyRoom.cs",
@@ -132,12 +129,11 @@
               "RelativeToolTip": "Assets\\Script\\DestroyRoom.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAAwAQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T20:42:44.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T20:42:44.94Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CharacterMovement.cs",
               "DocumentMoniker": "C:\\Users\\Miguel\\Documents\\GitHub\\MutationGame\\MutationGame\\Assets\\Script\\CharacterMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\CharacterMovement.cs",
@@ -145,8 +141,7 @@
               "RelativeToolTip": "Assets\\Script\\CharacterMovement.cs",
               "ViewState": "AQIAAKwBAAAAAAAAAAAgwC4AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T15:27:55.657Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-20T15:27:55.657Z"
             }
           ]
         }

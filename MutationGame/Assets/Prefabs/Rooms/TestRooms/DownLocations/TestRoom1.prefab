@@ -1771,11 +1771,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6491075080910412022, guid: dd335abc898fd974cac75d6970350f16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.046999987
+      value: -0.0276
       objectReference: {fileID: 0}
     - target: {fileID: 6491075080910412022, guid: dd335abc898fd974cac75d6970350f16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.103
+      value: 0.1117
       objectReference: {fileID: 0}
     - target: {fileID: 6491075080910412022, guid: dd335abc898fd974cac75d6970350f16, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2789,6 +2789,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7093429704441707421}
     m_Modifications:
+    - target: {fileID: 2236593095859275184, guid: 25548d7e6ded90b41a9c651ecd344194, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8397875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236593095859275184, guid: 25548d7e6ded90b41a9c651ecd344194, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2236593095859275184, guid: 25548d7e6ded90b41a9c651ecd344194, type: 3}
+      propertyPath: m_Offset.y
+      value: -6.6135
+      objectReference: {fileID: 0}
     - target: {fileID: 3432526518286096873, guid: 25548d7e6ded90b41a9c651ecd344194, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.056475043
@@ -2803,7 +2815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3432526518286096873, guid: 25548d7e6ded90b41a9c651ecd344194, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.089
+      value: -0.093
       objectReference: {fileID: 0}
     - target: {fileID: 3432526518286096873, guid: 25548d7e6ded90b41a9c651ecd344194, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2844,6 +2856,14 @@ PrefabInstance:
     - target: {fileID: 5204376324946899437, guid: 25548d7e6ded90b41a9c651ecd344194, type: 3}
       propertyPath: m_Name
       value: GravityFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275192290258616510, guid: 25548d7e6ded90b41a9c651ecd344194, type: 3}
+      propertyPath: m_Size.y
+      value: 0.80964315
+      objectReference: {fileID: 0}
+    - target: {fileID: 7275192290258616510, guid: 25548d7e6ded90b41a9c651ecd344194, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.037213817
       objectReference: {fileID: 0}
     - target: {fileID: 7282029462900443225, guid: 25548d7e6ded90b41a9c651ecd344194, type: 3}
       propertyPath: m_LocalPosition.y

@@ -10,6 +10,7 @@ TagManager:
   - SpetialAbilitiesDNA
   - DamageCollider
   - GravityCollition
+  - PlayerPart
   layers:
   - Default
   - TransparentFX
