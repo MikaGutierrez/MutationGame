@@ -8,10 +8,12 @@ public class MainMenu : MonoBehaviour
     public GameObject HintButton;
     public GameObject Hint1;
     public GameObject Hint2;
+    public GameObject CreditPaper;
     // Start is called before the first frame update
 
     public void Start()
     {
+        CreditPaper.SetActive(false);
         Hint1.SetActive(false); Hint2.SetActive(false);
     }
     public void ExitClick()
@@ -51,5 +53,13 @@ public class MainMenu : MonoBehaviour
         Hint1.SetActive(false);
         Hint2.SetActive(false);
         HintButton.SetActive(true);
+    }
+    public void CreditsClick()
+    {
+        CreditPaper.SetActive(true);
+    }
+    public void CreditsClick2()
+    {
+        CreditPaper.SetActive(false);
     }
 }

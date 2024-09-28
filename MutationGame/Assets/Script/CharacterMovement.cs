@@ -9,6 +9,20 @@ using UnityEngine.Rendering;
 
 public class CharacterMovement : MonoBehaviour
 {
+    //Floats
+    public float TimerG3;
+    private float TimerSecondsG3;
+    private float TimerHoursG3;
+    private string TimerTextG3;
+    public int GenesCountG3 = 0;
+    public int RoomsCountG3 = 0;
+    public Text TextTimer;
+    public Text TextRooms;
+    public Text TextGenes;
+
+
+
+
     //For Movement
     private bool WorkWalk = true;
     public float speed;
@@ -86,19 +100,27 @@ public class CharacterMovement : MonoBehaviour
         }
         if (collision.tag == "WingDNA")
         {
+            GenesCountG3 += 1;
             StartCoroutine(ActivateWings());
         }
         if (collision.tag == "LegsDNA")
         {
+            GenesCountG3 += 1;
             StartCoroutine(ActivateLegs());
         }
         if (collision.tag == "TailDNA")
         {
+            GenesCountG3 += 1;
             StartCoroutine(ActivateTail());
         }
         if (collision.tag == "SpetialAbilitiesDNA")
         {
+            GenesCountG3 += 1;
             StartCoroutine(ActivateSpetialAbilities());
+        }
+        if (collision.tag == "CheckGravityCollider")
+        { 
+            RoomsCountG3 += 1;
         }
         if (collision.tag == "DamageCollider" && TaketDamage == false)
         {
@@ -120,6 +142,7 @@ public class CharacterMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        TimerG3 = 0;
         DeadPanel.SetActive(false);
         RedGene.enabled =false;
         PurpleGene.enabled = false;
@@ -157,6 +180,28 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (TimerHoursG3 < 10 && TimerSecondsG3 < 10)
+        {
+            TimerTextG3 = "0" + Mathf.Floor(Mathf.Floor(TimerG3) / 60) + ":0" + (Mathf.Floor(TimerG3) % 60);
+        }
+        else if (TimerHoursG3 < 10)
+        {
+            TimerTextG3 = "0" + Mathf.Floor(Mathf.Floor(TimerG3) / 60) + ":" + (Mathf.Floor(TimerG3) % 60);
+        }
+        else if (TimerSecondsG3 < 10)
+        {
+            TimerTextG3 = Mathf.Floor(Mathf.Floor(TimerG3) / 60) + ":0" + (Mathf.Floor(TimerG3) % 60);
+        }
+        else
+        {
+            TimerTextG3 = Mathf.Floor(Mathf.Floor(TimerG3) / 60) + ":" + (Mathf.Floor(TimerG3) % 60);
+        }
+        if (IsDead == false)
+        {
+            TimerG3 += Time.deltaTime;
+            TimerHoursG3 = Mathf.Floor(Mathf.Floor(TimerG3) / 60);
+            TimerSecondsG3 = (Mathf.Floor(TimerG3) % 60);
+        }
         if (HPTimer <= 0)
         {
             StartCoroutine(Die());
@@ -467,6 +512,9 @@ public class CharacterMovement : MonoBehaviour
         yield return new WaitForSeconds(1f);
         sp.enabled = false;
         DeadPanel.SetActive(true);
+        TextTimer.text = TimerTextG3;
+        TextGenes.text = GenesCountG3 + "";
+        TextRooms.text = RoomsCountG3 + "";
     }
     private IEnumerator Appear()
     {

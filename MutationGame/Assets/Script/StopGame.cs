@@ -39,4 +39,20 @@ public class StopGame : MonoBehaviour
             Time.timeScale = 1f;
             IsGameStopped = false;
     }
+    public void ExitClick()
+    {
+        Application.Quit();
+        Time.timeScale = 1f;
+    }
+
+    public void StartClick()
+    {
+        SceneManager.LoadScene("SampleScene");
+        Time.timeScale = 1f;
+    }
+    public void BackClick()
+    {
+        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
+    }
 }
