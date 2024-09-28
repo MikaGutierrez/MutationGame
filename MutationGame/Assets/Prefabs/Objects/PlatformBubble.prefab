@@ -103,13 +103,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -10
   m_Sprite: {fileID: 809234956, guid: ceb1320aa5c718444b83c6861f8e6cd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.2105262, y: 0.6315789}
+  m_Size: {x: 1.6315789, y: 0.6315789}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -236,6 +236,7 @@ MonoBehaviour:
   AnimatorPlatform: {fileID: 8465954063491865491}
   Self: {fileID: 8808363038803211961}
   SpawnPoint: {fileID: 3264007345271092947}
+  PlayerOn: 0
 --- !u!50 &8059726688325061498
 Rigidbody2D:
   serializedVersion: 4

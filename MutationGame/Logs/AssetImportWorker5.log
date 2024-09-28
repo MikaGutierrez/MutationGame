@@ -1,0 +1,771 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.30f1 (70558241b701) revision 7361922'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'ru' Physical Memory: 16168 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/holya/Documents/GitHub/MutationGame/MutationGame
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+58033
+Successfully changed project path to: C:/Users/holya/Documents/GitHub/MutationGame/MutationGame
+C:/Users/holya/Documents/GitHub/MutationGame/MutationGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8888] Host "[IP] 192.168.0.43 [Port] 0 [Flags] 2 [Guid] 981510099 [EditorId] 981510099 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-13TATN6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8888] Host "[IP] 192.168.0.43 [Port] 0 [Flags] 2 [Guid] 981510099 [EditorId] 981510099 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-13TATN6K) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 13.13 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.30f1 (70558241b701)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/holya/Documents/GitHub/MutationGame/MutationGame/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   NVIDIA
+    VRAM:     5955 MB
+    Driver:   31.0.15.5244
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.30f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009268 seconds.
+- Loaded All Assemblies, in  0.392 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.300 seconds
+Domain Reload Profiling: 690ms
+	BeginReloadAssembly (114ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (161ms)
+		LoadAssemblies (112ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (159ms)
+			TypeCache.Refresh (157ms)
+				TypeCache.ScanAssembly (142ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (300ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (237ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.803 seconds
+Refreshing native plugins compatible for Editor in 6.00 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.873 seconds
+Domain Reload Profiling: 1672ms
+	BeginReloadAssembly (166ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (535ms)
+		LoadAssemblies (371ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (258ms)
+			TypeCache.Refresh (210ms)
+				TypeCache.ScanAssembly (191ms)
+			ScanForSourceGeneratedMonoScriptInfo (32ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (874ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (668ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (100ms)
+			ProcessInitializeOnLoadAttributes (455ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 6.02 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5864 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 99 unused Assets / (421.4 KB). Loaded Objects now: 6325.
+Memory consumption went from 227.1 MB to 226.7 MB.
+Total: 4.036300 ms (FindLiveObjects: 0.434000 ms CreateObjectMapping: 0.508500 ms MarkObjects: 2.866600 ms  DeleteObjects: 0.226400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 201005.432321 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe72d0d83a23f7724c8c3d9ff2852b5') in 0.386299 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4093
+========================================================================
+Received Import Request.
+  Time since last request: 1.418842 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '435a47d3855204fcbf99127dccef019d') in 0.104001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab
+  artifactKey: Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab using Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee937fc029cd8f3b2b71e3bbc979e831') in 0.094197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 7.027045 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b5a84583c86fe637e50565d6303fff') in 0.091755 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab
+  artifactKey: Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab using Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a4f31ff99b4900df4d089af4aa048d3') in 0.092451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 7.492656 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6781cbb7dc1973b756f90516f11bc84') in 0.110323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 0.904015 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d8430e141c6f90472317b6dcc01dac') in 0.097990 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom5.prefab
+  artifactKey: Guid(92e00ec77400e9e48aaec0c44aaa9f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom5.prefab using Guid(92e00ec77400e9e48aaec0c44aaa9f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96182c39ceca977ec193ffc3be97cd7c') in 0.104248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 15.805637 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82fe3f36a747560daa70f3a63ac59c55') in 0.100011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab
+  artifactKey: Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab using Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677180a09862aff2b7f681c9233708a1') in 0.101107 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 1.205636 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca75d4e0caeccd4fe5ab53be3c472458') in 0.108252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom5.prefab
+  artifactKey: Guid(92e00ec77400e9e48aaec0c44aaa9f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom5.prefab using Guid(92e00ec77400e9e48aaec0c44aaa9f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2060562b9d2dda0649a40af1be18ff69') in 0.096847 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 1.177118 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c566585f48c8f4e35a52ee15374615c') in 0.104153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab
+  artifactKey: Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab using Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a2ab3224cfd7576e6c7c3b2ca5f3089') in 0.096668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.553 seconds
+Refreshing native plugins compatible for Editor in 6.75 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.818 seconds
+Domain Reload Profiling: 2365ms
+	BeginReloadAssembly (184ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (277ms)
+		LoadAssemblies (338ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (27ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1819ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (776ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (120ms)
+			ProcessInitializeOnLoadAttributes (526ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 7.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5696 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (393.5 KB). Loaded Objects now: 6390.
+Memory consumption went from 201.9 MB to 201.5 MB.
+Total: 5.591200 ms (FindLiveObjects: 0.667200 ms CreateObjectMapping: 0.885900 ms MarkObjects: 3.861800 ms  DeleteObjects: 0.174900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 150.116080 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom5.prefab
+  artifactKey: Guid(75b40a31eff050a4a9ab6a4532458ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom5.prefab using Guid(75b40a31eff050a4a9ab6a4532458ccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcee72e151b719dd64f2801843024caa') in 0.341761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4110
+========================================================================
+Received Import Request.
+  Time since last request: 0.910913 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom2.prefab
+  artifactKey: Guid(c1e2d1d3c9487e24a875f008d6ca8ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom2.prefab using Guid(c1e2d1d3c9487e24a875f008d6ca8ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e2ced01f2cc8911d172f7550cba66e') in 0.085944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab
+  artifactKey: Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab using Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '087fba6624336dcd27e442bf858b5b8a') in 0.081035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.529 seconds
+Refreshing native plugins compatible for Editor in 6.00 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.715 seconds
+Domain Reload Profiling: 2238ms
+	BeginReloadAssembly (175ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (267ms)
+		LoadAssemblies (328ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1715ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (713ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (480ms)
+			ProcessInitializeOnLoadMethodAttributes (96ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Refreshing native plugins compatible for Editor in 8.00 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5696 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (392.6 KB). Loaded Objects now: 6444.
+Memory consumption went from 202.0 MB to 201.6 MB.
+Total: 4.581100 ms (FindLiveObjects: 0.488900 ms CreateObjectMapping: 0.624500 ms MarkObjects: 3.344200 ms  DeleteObjects: 0.122700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 503.737608 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/Corners/DownCornerR.prefab
+  artifactKey: Guid(92edbee5a58816146a2917f3e0d9627a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/Corners/DownCornerR.prefab using Guid(92edbee5a58816146a2917f3e0d9627a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4fc7b5791fd1743537296226d97992') in 0.347843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4110
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab
+  artifactKey: Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab using Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd546173b30605d17f0586e2f5b0b5cad') in 0.087633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4092
+========================================================================
+Received Import Request.
+  Time since last request: 10.267758 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom2.prefab
+  artifactKey: Guid(c404a1a0a3b6a684c856b638ba203d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom2.prefab using Guid(c404a1a0a3b6a684c856b638ba203d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b647b83fc56d6d5c97f43ddbf5d675') in 0.103647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4090
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab
+  artifactKey: Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab using Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71794da6496b13dd244c27e530a3915d') in 0.094951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4090
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2e533c270abf448f28c9e089a42de3') in 0.089503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4090
+========================================================================
+Received Import Request.
+  Time since last request: 4.107774 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom2.prefab
+  artifactKey: Guid(c404a1a0a3b6a684c856b638ba203d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom2.prefab using Guid(c404a1a0a3b6a684c856b638ba203d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f89c6ab97e305ff1cb83a893ec85e61') in 0.101314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab
+  artifactKey: Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab using Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46e16a0b73b7a423bd808a4bf6b61ad5') in 0.101883 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 3.414306 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf84e07844572f1a9e00741150457d4') in 0.105366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab
+  artifactKey: Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab using Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8901f8f0538a722b609da8735bb9f3ae') in 0.109767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 6.607156 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11076734a0b231a5447c089e63c1624b') in 0.097617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab
+  artifactKey: Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom4.prefab using Guid(e2d1fdc0b0d21824fa4ad5e83652e5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35373b10e544b46a5c10ae093e9f545e') in 0.081422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 6.663656 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216f3a272406f21272c9053d32d6d313') in 0.103105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom5.prefab
+  artifactKey: Guid(92e00ec77400e9e48aaec0c44aaa9f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom5.prefab using Guid(92e00ec77400e9e48aaec0c44aaa9f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f18f0509bfe4337a787a343c82a0862') in 0.094851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 1.180673 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa2dd7444283b83033d32efa511ac0f9') in 0.099522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 1.704978 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af691f6df0dd279b6d15f934101f18e3') in 0.099131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom5.prefab
+  artifactKey: Guid(92e00ec77400e9e48aaec0c44aaa9f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom5.prefab using Guid(92e00ec77400e9e48aaec0c44aaa9f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa3c529e9cb890dc5bfde31cf4123a3') in 0.089473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4086
+========================================================================
+Received Import Request.
+  Time since last request: 42.285384 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206762d0938c78bbfd404b59ee2767ec') in 0.102601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4077
+========================================================================
+Received Import Request.
+  Time since last request: 5.280941 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ae92b41f908279e6ade0301cb1dfeb') in 0.108761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4081
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom5.prefab
+  artifactKey: Guid(92e00ec77400e9e48aaec0c44aaa9f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom5.prefab using Guid(92e00ec77400e9e48aaec0c44aaa9f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0c772545150825322a1b5c0329da46') in 0.095190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4081
+========================================================================
+Received Import Request.
+  Time since last request: 1.211963 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdfd3c8d794e4fed6b1b3d681afda02e') in 0.107477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4081
+========================================================================
+Received Import Request.
+  Time since last request: 9.580960 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab
+  artifactKey: Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/UpLocations/TestRoom3.prefab using Guid(044205f7199131a49bc662494100bca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d2aed8858b6b2bce05e9b6a95a8e28') in 0.108277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4085
+========================================================================
+Received Import Request.
+  Time since last request: 35.284914 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom6.prefab
+  artifactKey: Guid(ac6de189e49e2054ab5771b773d90695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom6.prefab using Guid(ac6de189e49e2054ab5771b773d90695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d6573bf79308c217ad2a9f6f911be5') in 0.127474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4085
+========================================================================
+Received Import Request.
+  Time since last request: 2.822852 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom6.prefab
+  artifactKey: Guid(ac6de189e49e2054ab5771b773d90695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom6.prefab using Guid(ac6de189e49e2054ab5771b773d90695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4fdcaffe8b244285ae10b43e9e0a12') in 0.117732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4089
+========================================================================
+Received Import Request.
+  Time since last request: 3.886646 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom6.prefab
+  artifactKey: Guid(ac6de189e49e2054ab5771b773d90695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom6.prefab using Guid(ac6de189e49e2054ab5771b773d90695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f5c08b29022034633689551e931e077') in 0.108062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4093
+========================================================================
+Received Import Request.
+  Time since last request: 2.326153 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom6.prefab
+  artifactKey: Guid(ac6de189e49e2054ab5771b773d90695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom6.prefab using Guid(ac6de189e49e2054ab5771b773d90695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09f08a1b451e0545d224acdd9222468') in 0.106698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4097
+========================================================================
+Received Import Request.
+  Time since last request: 0.864035 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab
+  artifactKey: Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab using Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee2909ffe062b661724eac8c92966a71') in 0.149265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4097
+========================================================================
+Received Import Request.
+  Time since last request: 1.924830 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab
+  artifactKey: Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab using Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0051cfba26d86f7f6f3f8e7cf09cfc0') in 0.108989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4101
+========================================================================
+Received Import Request.
+  Time since last request: 5.693706 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab
+  artifactKey: Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab using Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd871f5de03dcdc14387ed508ee641301') in 0.141121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4101
+========================================================================
+Received Import Request.
+  Time since last request: 1.189283 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab
+  artifactKey: Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab using Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a410018c9ca8d076cbfe75564db4a8') in 0.393524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4101
+========================================================================
+Received Import Request.
+  Time since last request: 0.637782 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom6.prefab
+  artifactKey: Guid(ac6de189e49e2054ab5771b773d90695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/RightLocation/TestRoom6.prefab using Guid(ac6de189e49e2054ab5771b773d90695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '832c7f9bfa25c91df572993d6808a238') in 0.125801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4101
+========================================================================
+Received Import Request.
+  Time since last request: 9.743954 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab
+  artifactKey: Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab using Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eeff0dbfa54763f7b1075a566e4238f') in 0.100407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4105
+========================================================================
+Received Import Request.
+  Time since last request: 3.542280 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab
+  artifactKey: Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab using Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59721372421f06eb7c1bd25a78a4d42e') in 0.100879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4109
+========================================================================
+Received Import Request.
+  Time since last request: 3.788972 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab
+  artifactKey: Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab using Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b12b177604e2f579b91c078b4456ace5') in 0.094902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4109
+========================================================================
+Received Import Request.
+  Time since last request: 0.029129 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab
+  artifactKey: Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab using Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec3319b5d9a54037c4ebeea15f7ef6b') in 0.110772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4109
+========================================================================
+Received Import Request.
+  Time since last request: 0.998318 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab
+  artifactKey: Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/DownLocations/TestRoom3.prefab using Guid(4b052b3d8939ac148a4e223e4ceb2ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c278e12bcd3d88f9f3100fe374e721') in 0.110688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4109
+========================================================================
+Received Import Request.
+  Time since last request: 5.461883 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab
+  artifactKey: Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab using Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90f6568621e84e36d2b2c917ee60180') in 0.100737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4113
+========================================================================
+Received Import Request.
+  Time since last request: 9.028783 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab
+  artifactKey: Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab using Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd06f4d1f8146a4dab0d7d1cef87b79') in 0.111922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4117
+========================================================================
+Received Import Request.
+  Time since last request: 3.091829 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab
+  artifactKey: Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab using Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2abf8bbb0e8e05efe35e2834999d340f') in 0.102126 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4121
+========================================================================
+Received Import Request.
+  Time since last request: 2.120427 seconds.
+  path: Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab
+  artifactKey: Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/TestRooms/Corners/RightDown.prefab using Guid(0f2d5de2df8215c4f92d26513acd2c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8324c8d554ef92ba246ce91cae10eb2d') in 0.112500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4125
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

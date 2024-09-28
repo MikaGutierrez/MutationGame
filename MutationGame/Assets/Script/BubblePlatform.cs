@@ -58,7 +58,7 @@ public class BubblePlatform : MonoBehaviour
         void Respawn()
     {
         Self.transform.position = SpawnPoint.transform.position;
-        AnimatorPlatform.Play("BubblePlatformIdle");
+        AnimatorPlatform.Play("BubblePlatformRespawn");
         PlayerOn = false;
     }
 }
