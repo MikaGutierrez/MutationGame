@@ -10938,7 +10938,8 @@ PrefabInstance:
       value: PlatformBubble
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5286513883032602596, guid: b3fa7715a9887054ba9d8132f7493bd2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3fa7715a9887054ba9d8132f7493bd2, type: 3}
