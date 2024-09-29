@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BubblePlatform : MonoBehaviour
+public class BubblePlatform : Audio
 {
     private Rigidbody2D rb;
     public Animator AnimatorPlatform;
@@ -74,5 +74,9 @@ public class BubblePlatform : MonoBehaviour
         Self.transform.position = SpawnPoint.transform.position;
         AnimatorPlatform.Play("BubblePlatformRespawn");
         PlayerOn = false;
+    }
+    public void PlayIt()
+    {
+        PlaySounds(audioClips[0], p1: 0.8f, p2: 1.2f);
     }
 }

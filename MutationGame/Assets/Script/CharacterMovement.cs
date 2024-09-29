@@ -7,8 +7,10 @@ using UnityEngine.UI;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
 
-public class CharacterMovement : MonoBehaviour
+public class CharacterMovement : Audio
 {
+    [Header("For Sounds")]
+    public bool TuchedFloor = true;
     [Header("Death Floats")]
     public float TimerG3;
     private float TimerSecondsG3;
@@ -107,21 +109,25 @@ public class CharacterMovement : MonoBehaviour
         }
         if (collision.tag == "WingDNA")
         {
+            PlaySounds(audioClips[1], p1: 0.8f, p2: 1.2f);
             GenesCountG3 += 1;
             StartCoroutine(ActivateWings());
         }
         if (collision.tag == "LegsDNA")
         {
+            PlaySounds(audioClips[1], p1: 0.8f, p2: 1.2f);
             GenesCountG3 += 1;
             StartCoroutine(ActivateLegs());
         }
         if (collision.tag == "TailDNA")
         {
+            PlaySounds(audioClips[1], p1: 0.8f, p2: 1.2f);
             GenesCountG3 += 1;
             StartCoroutine(ActivateTail());
         }
         if (collision.tag == "SpetialAbilitiesDNA")
         {
+            PlaySounds(audioClips[1], p1: 0.8f, p2: 1.2f);
             GenesCountG3 += 1;
             StartCoroutine(ActivateSpetialAbilities());
         }
@@ -129,10 +135,15 @@ public class CharacterMovement : MonoBehaviour
         { 
             RoomsCountG3 += 1;
         }
-        if (collision.tag == "DamageCollider" && TaketDamage == false)
+        if (collision.tag == "DamageCollider" && TaketDamage == false && IsDead == false)
         {
+            PlaySounds(audioClips[2],volume:0.6f, p1: 0.8f, p2: 1.2f);
             rb.velocity = Vector2.up * 10f;
             TakeDamage();
+        }
+        if (collision.gameObject.layer == 6)
+        {
+            PlaySounds(audioClips[0],p1:0.8f,p2:1.2f);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -188,6 +199,17 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (isGrounded == true && TuchedFloor == true && IsDead == false)
+        {
+            TuchedFloor = false;
+            PlaySounds(audioClips[0], p1: 0.8f, p2: 1.2f);
+        }
+        if (isGrounded == false)
+        {
+            TuchedFloor = true;
+        }
+        //------------- јчивки
         if (TimerHoursG3 < 10 && TimerSecondsG3 < 10)
         {
             TimerTextG3 = "0" + Mathf.Floor(Mathf.Floor(TimerG3) / 60) + ":0" + (Mathf.Floor(TimerG3) % 60);
@@ -332,6 +354,8 @@ public class CharacterMovement : MonoBehaviour
         {
             if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
             {
+
+                PlaySounds(audioClips[5], p1: 0.8f, p2: 1.2f);
                 isJumping = true;
                 SecondJump = true;
                 jumpTimeCounter = jumpTime;
@@ -530,12 +554,16 @@ public class CharacterMovement : MonoBehaviour
         VolumeG3.profile = SpetialAbilities[SpetialAbilitiesNumber];
         foreach (GameObject objet in Tails) { objet.SetActive(false); }
         foreach (GameObject objet in Legs) { objet.SetActive(false); }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.21f);
+        yield return new WaitForSeconds(0.000001f);
+        yield return new WaitForSeconds(0.79f);
         sp.enabled = false;
         DeadPanel.SetActive(true);
         TextTimer.text = TimerTextG3;
         TextGenes.text = GenesCountG3 + "";
         TextRooms.text = RoomsCountG3 + "";
+        yield return new WaitForSeconds(0.3f);
+        PlaySounds(audioClips[3], volume: 0.1f, p1: 0.8f, p2: 1.2f);
     }
     private IEnumerator Appear()
     {
