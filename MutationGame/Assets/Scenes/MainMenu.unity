@@ -1526,17 +1526,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028520093}
-  m_LocalRotation: {x: -0, y: -0, z: 0.029754527, w: -0.9995573}
+  m_LocalRotation: {x: -0, y: -0, z: 0.031183358, w: -0.99951375}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1073573428}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.41}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.574}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.5219, y: -9.0725}
-  m_SizeDelta: {x: 288.9918, y: 260.3265}
+  m_AnchoredPosition: {x: 4, y: -40}
+  m_SizeDelta: {x: 419.5235, y: 350.7253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1028520095
 MonoBehaviour:
@@ -1560,7 +1560,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7b6fb19c5b0aa124db4b89cd3775b196, type: 3}
-    m_FontSize: 28
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1571,7 +1571,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.02
-  m_Text: "Programming\nMikaGut\n\nVisuals\navovocado\n\nMusic by \nXtremeFreddy\nGioeleFazzeri"
+  m_Text: "Game design by \nMikaGut and avovocado\n\nProgramming - MikaGut\n\nVisuals
+    - avovocado\n\nMusic by \nXtremeFreddy\nGioeleFazzeri"
 --- !u!222 &1028520096
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1598,7 +1599,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1073573428
 RectTransform:
   m_ObjectHideFlags: 0
