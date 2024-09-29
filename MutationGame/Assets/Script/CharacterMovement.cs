@@ -573,8 +573,6 @@ public class CharacterMovement : Audio
         TextTimer.text = TimerTextG3;
         TextGenes.text = GenesCountG3 + "";
         TextRooms.text = RoomsCountG3 + "";
-        yield return new WaitForSeconds(0.3f);
-        PlaySounds(audioClips[3], volume: 0.1f, p1: 0.8f, p2: 1.2f);
     }
     private IEnumerator Appear()
     {
