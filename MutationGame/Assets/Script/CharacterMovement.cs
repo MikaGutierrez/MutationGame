@@ -21,6 +21,7 @@ public class CharacterMovement : Audio
     public Text TextTimer;
     public Text TextRooms;
     public Text TextGenes;
+    public static bool FoundedG2 = false;
 
     [Header("Movement")]
     private bool WorkWalk = true;
@@ -103,6 +104,10 @@ public class CharacterMovement : Audio
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "Girojio2")
+        { 
+            FoundedG2 = true;
+        }
         if (collision.tag == "GravityCollition")
         {
             rb.gravityScale = -0.1f;
@@ -370,16 +375,19 @@ public class CharacterMovement : Audio
                 }
                 if (WingNumber == 3)
                 {
+                    PlaySounds(audioClips[6], p1: 0.8f, p2: 1.2f);
                     jumpTimeCounter = jumpTime;
                     rb.velocity = Vector2.up * jumpForce;
                 }
                 if (WingNumber == 2)
                 {
+                    PlaySounds(audioClips[7],p1:0.8f,p2:1.2f);
                     jumpTimeCounter = jumpTime * 2f;
                     rb.velocity = Vector2.up * -0.15f;
                 }
                 if (WingNumber == 1)
                 {
+                    PlaySounds(audioClips[6], p1: 0.8f, p2: 1.2f);
                     WorkWalk = false;
                     jumpTimeCounter = 0.17f;
                 }
@@ -414,6 +422,8 @@ public class CharacterMovement : Audio
             }
             if (Input.GetKeyUp(KeyCode.Space))
             {
+                if (WingNumber == 0 || WingNumber == 2)
+                { audioSr.Stop(); }
                 BlueTrail.SetActive(false);
                 if (isJumping == true && SecondJump == true)
                 {
@@ -427,6 +437,7 @@ public class CharacterMovement : Audio
 
             if (WorkWalk == false && WingNumber == 1 && jumpTimeCounter > 0)
             {
+
                 if (moveInput < 0)
                 {
                     rb.velocity = Vector2.left * 50f;

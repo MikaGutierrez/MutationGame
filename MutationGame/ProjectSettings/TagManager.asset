@@ -12,6 +12,7 @@ TagManager:
   - GravityCollition
   - PlayerPart
   - CheckGravityCollider
+  - Girojio2
   layers:
   - Default
   - TransparentFX

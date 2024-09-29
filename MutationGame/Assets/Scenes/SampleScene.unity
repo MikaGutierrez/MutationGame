@@ -3018,6 +3018,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cf9b9d48782b87049b8f66be3fe0940e, type: 3}
   - {fileID: 8300000, guid: 30bc54105759db64ab5d4851c5352210, type: 3}
   - {fileID: 8300000, guid: 17db5532852d9034e9c770f91259e2c1, type: 3}
+  - {fileID: 8300000, guid: cb6e7271d5cb63c439b7b8a3c4188986, type: 3}
+  - {fileID: 8300000, guid: 42c1696b8e0257a4b981d1414c89b928, type: 3}
   TuchedFloor: 1
   TimerG3: 0
   GenesCountG3: 0
@@ -3025,6 +3027,7 @@ MonoBehaviour:
   TextTimer: {fileID: 986197935}
   TextRooms: {fileID: 2108979698}
   TextGenes: {fileID: 417248647}
+  FoundedG2: 0
   speed: 5
   IsDead: 0
   WeightMM: 1
@@ -9820,7 +9823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1507409834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11910,7 +11913,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f9a2d41a435bcbe45b65be85ac621893, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11996,7 +11999,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: abd17ed95888cd84e91182fa62085447, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15518,6 +15521,22 @@ PrefabInstance:
     - target: {fileID: 544484094716201236, guid: d357cdcab7f756747ada659a6dd53fbb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324212932408733792, guid: d357cdcab7f756747ada659a6dd53fbb, type: 3}
+      propertyPath: m_Size.x
+      value: 6.151568
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324212932408733792, guid: d357cdcab7f756747ada659a6dd53fbb, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5963641
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324212932408733792, guid: d357cdcab7f756747ada659a6dd53fbb, type: 3}
+      propertyPath: m_Offset.x
+      value: 5.0418878
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324212932408733792, guid: d357cdcab7f756747ada659a6dd53fbb, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.42353657
       objectReference: {fileID: 0}
     - target: {fileID: 1966235042292563692, guid: d357cdcab7f756747ada659a6dd53fbb, type: 3}
       propertyPath: m_LocalScale.y
