@@ -1,4 +1,4 @@
-№ Made for GoedWare Game Jam #12
+# Made for GoedWare Game Jam #12
 
 You're a little goofy something that has to go through a lab test and survive as long as possible.
 
