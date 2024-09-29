@@ -1086,6 +1086,8 @@ MonoBehaviour:
   NextRooms:
   - {fileID: 3973427378017883682, guid: 05b5c791786c3974aa9898acce7338fa, type: 3}
   - {fileID: 3973427378017883682, guid: 0f2d5de2df8215c4f92d26513acd2c51, type: 3}
+  - {fileID: 3973427378017883682, guid: 02c59b677d88d154092a5d14af558085, type: 3}
+  - {fileID: 3973427378017883682, guid: 66c9af2508354844486366548181784a, type: 3}
 --- !u!1001 &246331378487795161
 PrefabInstance:
   m_ObjectHideFlags: 0

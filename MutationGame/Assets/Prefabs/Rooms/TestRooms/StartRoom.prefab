@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2324788834986820340}
   - component: {fileID: 1819237477028917726}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2928246768676390683}
   - component: {fileID: 5572831545032402895}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5321481374399929791}
   - component: {fileID: 6445139997121294562}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3198782904365895853}
   - component: {fileID: 40958815125565161}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3671615258205349867}
   - component: {fileID: 4188974771183965787}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,7 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7313951609805348742}
   - component: {fileID: 1433582031005014172}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1018,7 +1018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8206825103125003814}
   - component: {fileID: 7183113539988712091}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1186,7 +1186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4529258348050196509}
   - component: {fileID: 7028096925555042430}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: PlatformLarge (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1305,7 +1305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9066730134530608433}
   - component: {fileID: 929051800327078594}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1389,7 +1389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5192994872613462060}
   - component: {fileID: 289693511857934648}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Platform (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1554,7 +1554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 879560881924259054}
   - component: {fileID: 2637098373022893018}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1890,7 +1890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5283839671576193341}
   - component: {fileID: 6203920160987428898}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Platform (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2044,7 +2044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9162225367898300943}
   - component: {fileID: 6562726975910726453}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2128,7 +2128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7237972746407042949}
   - component: {fileID: 698331679706286896}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2296,7 +2296,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1561672897834289829}
   - component: {fileID: 643152008270284222}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2550,7 +2550,7 @@ GameObject:
   - component: {fileID: 7445729049332095861}
   - component: {fileID: 7084963546610242142}
   - component: {fileID: 5329259799029191396}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: StartRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2689,7 +2689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1142906271240497180}
   - component: {fileID: 92912398829800621}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2941,7 +2941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2085709831264629572}
   - component: {fileID: 397299855864780529}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3025,7 +3025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7714462859296853219}
   - component: {fileID: 9020259029241246882}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Platform (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3216,7 +3216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 309972108676006040}
   - component: {fileID: 1014110761158078036}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3384,7 +3384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7806360867832917237}
   - component: {fileID: 8098808246314616645}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3468,7 +3468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9084383209871410511}
   - component: {fileID: 2765933770340598049}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Platform (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3538,7 +3538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8111563834307951021}
   - component: {fileID: 6321148463560280268}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Platform (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3692,7 +3692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 223157977863904660}
   - component: {fileID: 6291692365185255060}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: PlatformLarge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3762,7 +3762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5845759531703668313}
   - component: {fileID: 6045861555647629922}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3930,7 +3930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8776873130445172716}
   - component: {fileID: 6754768219376571075}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4100,7 +4100,7 @@ GameObject:
   - component: {fileID: 8882571271253565307}
   - component: {fileID: 2211886158450999349}
   - component: {fileID: 2655131871006715129}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DamageCollider (4)
   m_TagString: DamageCollider
   m_Icon: {fileID: 0}
@@ -4281,7 +4281,7 @@ GameObject:
   - component: {fileID: 1179152240499368178}
   - component: {fileID: 7176297318634757101}
   - component: {fileID: 5111968382273122740}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DamageCollider (11)
   m_TagString: DamageCollider
   m_Icon: {fileID: 0}
@@ -4666,7 +4666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7310282666945541120}
   - component: {fileID: 6633558858838443818}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4750,7 +4750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5890311682297538108}
   - component: {fileID: 1110078373590104033}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Platform (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4820,7 +4820,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5639533703136321820}
   - component: {fileID: 5007184717423902873}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4990,7 +4990,7 @@ GameObject:
   - component: {fileID: 6361754524824180086}
   - component: {fileID: 8284341189123628479}
   - component: {fileID: 6661760025527662383}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DamageCollider (7)
   m_TagString: DamageCollider
   m_Icon: {fileID: 0}
@@ -5169,7 +5169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 930463261095357259}
   - component: {fileID: 2036089752385963542}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5255,7 +5255,7 @@ GameObject:
   - component: {fileID: 4065768047224167204}
   - component: {fileID: 5183108051940915391}
   - component: {fileID: 55351846593800753}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DamageCollider (10)
   m_TagString: DamageCollider
   m_Icon: {fileID: 0}
@@ -5520,7 +5520,7 @@ GameObject:
   - component: {fileID: 1927655064109590828}
   - component: {fileID: 1863847357344739834}
   - component: {fileID: 8902505171859910237}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DamageCollider (8)
   m_TagString: DamageCollider
   m_Icon: {fileID: 0}
@@ -5867,7 +5867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 767292722782715127}
   - component: {fileID: 4002315560931534270}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5951,7 +5951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4099233882653735877}
   - component: {fileID: 5320087937453012022}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6037,7 +6037,7 @@ GameObject:
   - component: {fileID: 8114847050916457928}
   - component: {fileID: 6273404554801013714}
   - component: {fileID: 8712402157044856673}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DamageCollider (9)
   m_TagString: DamageCollider
   m_Icon: {fileID: 0}
@@ -6530,7 +6530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7427445986239931023}
   - component: {fileID: 9021177589549465867}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6614,7 +6614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7574747013142111937}
   - component: {fileID: 4010462770486349554}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: EndL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6700,7 +6700,7 @@ GameObject:
   - component: {fileID: 3502461936209524478}
   - component: {fileID: 2467862289695211804}
   - component: {fileID: 3628576781319828584}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7515,7 +7515,7 @@ GameObject:
   - component: {fileID: 3258056580208818650}
   - component: {fileID: 8818015672952390008}
   - component: {fileID: 8647548378975458076}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DamageCollider (6)
   m_TagString: DamageCollider
   m_Icon: {fileID: 0}
@@ -7862,7 +7862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5055511059348826976}
   - component: {fileID: 1324212932408733792}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: PlatformReallyBig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7934,7 +7934,7 @@ GameObject:
   - component: {fileID: 1734987931617495423}
   - component: {fileID: 4897735891850358687}
   - component: {fileID: 2498899849180440695}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DamageCollider (5)
   m_TagString: DamageCollider
   m_Icon: {fileID: 0}
@@ -8197,7 +8197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2241083156006626291}
   - component: {fileID: 5469449630098199511}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8533,7 +8533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5188205506448843680}
   - component: {fileID: 3839116878430757038}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,6 +9,10 @@ public class BubblePlatform : MonoBehaviour
     public GameObject Self;
     public GameObject SpawnPoint;
     public bool PlayerOn = false;
+    public bool isGrounded = false;
+    public Transform groundCheck;
+    public float checkRadius;
+    public LayerMask whatIsGround;
 
     //public void OnTriggerStay2D(Collider2D collision)
     //{
@@ -45,6 +49,8 @@ public class BubblePlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+
         if (PlayerOn == true)
         {
             rb.velocity = Vector2.up * -1.2f;
@@ -53,10 +59,18 @@ public class BubblePlatform : MonoBehaviour
         {
             rb.velocity = Vector2.up * 0;
         }
+
+        if (isGrounded == true)
+        {
+            isGrounded = false;
+            AnimatorPlatform.Play("BubblePlatformExplode");
+        }
      }
 
         void Respawn()
     {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+        isGrounded = false;
         Self.transform.position = SpawnPoint.transform.position;
         AnimatorPlatform.Play("BubblePlatformRespawn");
         PlayerOn = false;

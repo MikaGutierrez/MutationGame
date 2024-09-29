@@ -9,7 +9,7 @@ using UnityEngine.Rendering;
 
 public class CharacterMovement : MonoBehaviour
 {
-    //Floats
+    [Header("Death Floats")]
     public float TimerG3;
     private float TimerSecondsG3;
     private float TimerHoursG3;
@@ -20,16 +20,13 @@ public class CharacterMovement : MonoBehaviour
     public Text TextRooms;
     public Text TextGenes;
 
-
-
-
-    //For Movement
+    [Header("Movement")]
     private bool WorkWalk = true;
     public float speed;
     private float moveInput;
     public bool IsDead = false;
 
-    //For Jump
+    [Header("jump Parametrs")]
     public float WeightMM = 1f;
     public bool SecondJump;
     public bool isJumping;
@@ -37,18 +34,20 @@ public class CharacterMovement : MonoBehaviour
     public float jumpTimeCounter;
     public float jumpTime;
 
-    //Ground Check
+    [Header("Ground Check")]
     public bool isGrounded;
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
 
-    //Rigidbody2D
+    
+    [Header("Rigidbody2D")]
     private Rigidbody2D rb;
     public CapsuleCollider2D cl;
     public SpriteRenderer sp;
     private float RigidbodyOriginalGravityScale;
-    //Health
+
+    [Header("Health")]
     public Image RedGene;
     public Image PurpleGene;
     public Image YellowGene;
@@ -58,10 +57,11 @@ public class CharacterMovement : MonoBehaviour
 
 
 
+    [Header("Animator")]
     public Animator AnimatorForG3;
 
 
-    //PartsOfTheBody
+    [Header("Parts Of The Body")]
     public float jumpForceWings;
     public int WingNumber = 0;
     private int WingNumberOld = 0;
@@ -87,7 +87,14 @@ public class CharacterMovement : MonoBehaviour
     public VolumeProfile[] SpetialAbilities; //Normal, RGB, Vingete,Black & White, Oven
     public Volume VolumeG3;
 
-    //Dead
+    public GameObject RedParticle;
+    public GameObject PurpleParticle;
+    public GameObject YellowParticle;
+    public GameObject BlueParticle;
+    public GameObject BlueTrail;
+
+    
+    [Header("Deadth")]
     public GameObject DeadPanel;
     public GameObject TailRenderer;
     private bool TaketDamage;
@@ -142,6 +149,7 @@ public class CharacterMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        BlueTrail.SetActive(false);
         TimerG3 = 0;
         DeadPanel.SetActive(false);
         RedGene.enabled =false;
@@ -291,7 +299,7 @@ public class CharacterMovement : MonoBehaviour
         }
         else if (LegNumber == 1)//3 leg
         {
-            jumpForceLeg = 4 * 2 * WeightMM;
+            jumpForceLeg = 4 * 3 * WeightMM;
         }
         else if (LegNumber == 3)//2 leg
         {
@@ -331,6 +339,11 @@ public class CharacterMovement : MonoBehaviour
             }
             if (isJumping == false && SecondJump == true && Input.GetKeyDown(KeyCode.Space))
             {
+
+                if (WingNumber != 0)
+                {
+                    BlueTrail.SetActive(true);
+                }
                 if (WingNumber == 3)
                 {
                     jumpTimeCounter = jumpTime;
@@ -339,7 +352,7 @@ public class CharacterMovement : MonoBehaviour
                 if (WingNumber == 2)
                 {
                     jumpTimeCounter = jumpTime * 2f;
-                    rb.velocity = Vector2.up * -0.3f;
+                    rb.velocity = Vector2.up * -0.15f;
                 }
                 if (WingNumber == 1)
                 {
@@ -357,16 +370,19 @@ public class CharacterMovement : MonoBehaviour
                 }
                 if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 3 && isJumping == false)
                 {
+                    BlueTrail.SetActive(true);
                     rb.velocity = Vector2.up * (jumpForce + jumpForceLeg + jumpForceTail + jumpForceWings);
                     jumpTimeCounter -= Time.deltaTime;
                 }
                 if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 2 && isJumping == false)
                 {
-                    rb.velocity = Vector2.up * -0.3f;
+                    BlueTrail.SetActive(true);
+                    rb.velocity = Vector2.up * -0.2f;
                     jumpTimeCounter -= Time.deltaTime;
                 }
                 if (jumpTimeCounter > 0 && SecondJump == true && WingNumber == 1 && isJumping == false)
                 {
+                    BlueTrail.SetActive(true);
                     rb.velocity = Vector2.left * 10f;
                     jumpTimeCounter -= Time.deltaTime;
                 }
@@ -374,6 +390,7 @@ public class CharacterMovement : MonoBehaviour
             }
             if (Input.GetKeyUp(KeyCode.Space))
             {
+                BlueTrail.SetActive(false);
                 if (isJumping == true && SecondJump == true)
                 {
                     isJumping = false;
@@ -470,21 +487,25 @@ public class CharacterMovement : MonoBehaviour
         TaketDamage = true;
         if (WingNumber > 0)
         {
+            Instantiate(BlueParticle, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, 0.3f, 0f));
             WingNumber = 0;
             foreach (GameObject objet in Wings) { objet.SetActive(false); }
         }
         else if (SpetialAbilitiesNumber > 0)
         {
+            Instantiate(PurpleParticle, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, 0f, 0f));
             SpetialAbilitiesNumber = 0;
             VolumeG3.profile = SpetialAbilities[SpetialAbilitiesNumber];
         }
         else if (TailNumber > 0)
         {
+            Instantiate(YellowParticle, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(-0.5f, 0f, 0f));
             TailNumber = 0;
             foreach (GameObject objet in Tails) { objet.SetActive(false); }
         }
         else if (LegNumber > 0)
         {
+            Instantiate(RedParticle, new Vector3(transform.position.x, transform.position.y, 0f), Quaternion.Euler(0f, -0.3f, 0f));
             LegNumber = 0;
             foreach (GameObject objet in Legs) { objet.SetActive(false); }
         }
