@@ -11,6 +11,17 @@ public class CharacterMovement : Audio
 {
     [Header("For Sounds")]
     public bool TuchedFloor = true;
+    [Header("Records")]
+    public static float TimerTimerTimer;
+    public static string TimerTimer;
+    public static float RoomTimer;
+    public static float GenesTimer;
+    public static string TimerRoom;
+    public static float RoomRoom;
+    public static float GenesRoom;
+    public static string TimerGenes;
+    public static float RoomGenes;
+    public static float GenesGenes;
     [Header("Death Floats")]
     public float TimerG3;
     private float TimerSecondsG3;
@@ -573,6 +584,26 @@ public class CharacterMovement : Audio
         TextTimer.text = TimerTextG3;
         TextGenes.text = GenesCountG3 + "";
         TextRooms.text = RoomsCountG3 + "";
+        //Records
+        if (TimerG3 > TimerTimerTimer)
+        {
+            TimerTimerTimer = TimerG3;
+            TimerTimer = TimerTextG3;
+            RoomTimer = RoomsCountG3;
+            GenesTimer = GenesCountG3;
+        }
+        if (RoomsCountG3 > RoomRoom)
+        {
+            TimerRoom = TimerTextG3;
+            RoomRoom = RoomsCountG3;
+            GenesRoom = GenesCountG3;
+        }
+        if (GenesCountG3 > GenesGenes)
+        {
+            TimerGenes = TimerTextG3;
+            RoomGenes = RoomsCountG3;
+            GenesGenes = GenesCountG3;
+        }
     }
     private IEnumerator Appear()
     {
