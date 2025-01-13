@@ -13,13 +13,13 @@ public class CharacterMovement : Audio
     public bool TuchedFloor = true;
     [Header("Records")]
     public static float TimerTimerTimer;
-    public static string TimerTimer;
+    public static string TimerTimer = "0:00";
     public static float RoomTimer;
     public static float GenesTimer;
-    public static string TimerRoom;
+    public static string TimerRoom = "0:00";
     public static float RoomRoom;
     public static float GenesRoom;
-    public static string TimerGenes;
+    public static string TimerGenes = "0:00";
     public static float RoomGenes;
     public static float GenesGenes;
     [Header("Death Floats")]

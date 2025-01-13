@@ -35,13 +35,16 @@ public class MainMenu : Audio
 
     public void Update()
     {
+
         TextTimerTimer.text = CharacterMovement.TimerTimer + "";
         TextRoomTimer.text = CharacterMovement.RoomTimer + "";
         TextGenesTimer.text = CharacterMovement.GenesTimer + "";
 
+
         TextTimerRoom.text = CharacterMovement.TimerRoom + "";
         TextRoomRoom.text = CharacterMovement.RoomRoom + "";
         TextGenesRoom.text = CharacterMovement.GenesRoom + "";
+
 
         TextTimerGenes.text = CharacterMovement.TimerGenes + "";
         TextRoomGenes.text = CharacterMovement.RoomGenes + "";
